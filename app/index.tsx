@@ -1,47 +1,49 @@
 import CustomButton from "@/components/CustomButton";
 import { router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { Image, ScrollView, Text, View } from "react-native";
+import { ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { images } from "../constants";
 
 export default function Index() {
 	return (
-		<SafeAreaView className="bg-primary h-full">
-			<ScrollView contentContainerStyle={{ height: "100%" }}>
+		<SafeAreaView className=" h-full bg-primary">
+			<ScrollView
+				contentContainerStyle={{ height: "100%" }}
+				className="bg-gradient-to-b from-gradient-bgFrom to-gradient-bgTo"
+			>
 				<View className="w-full h-full justify-center items-center px-4">
-					<Image
-						source={images.logo}
-						className="w-[130px] h-[84px]"
-						resizeMode="contain"
-					/>
-					<Image
-						source={images.cards}
-						className="max-w-[380px] w-full h-[300px]"
-						resizeMode="contain"
-					/>
+					<Text className="text-white font-extrabold text-6xl text-center">Rock</Text>
+					<Text className="text-white font-extrabold text-6xl text-center">Paper</Text>
+					<Text className="text-white font-extrabold text-6xl text-center">Scissors</Text>
 
-					<View className="relative mt-5">
-						<Text className="text-center text-white text-3xl font-bold">
-							Discover Endless Possibilities with
-							<Text className="text-secondary-200"> Aora</Text>
+					<Text className="relative text-white text-xl font-bold mt-7">
+						<Text className="text-center text-white text-xl font-bold">
+							Get ready to test your reflexes and strategy in this classic battle of
+							wits.
 						</Text>
-
-						<Image
-							source={images.path}
-							resizeMode="contain"
-							className="w-[106px] h-[15px] absolute -bottom-2 right-[100px]"
-						/>
-					</View>
-					<Text className="text-sm font-pregular text-gray-100 mt-7 text-center">
-						Where creativity meets innovation: embark on a journey of limitless
-						exploration with Aora
 					</Text>
 
+					<View className="mt-10">
+						<Text className="text-secondary font-psemibold text-3xl mb-5">
+							Here's how to play:
+						</Text>
+						<View className="ml-5">
+							<Text className="text-white font-psemibold text-lg">
+								✊ Rock crushes Scissors
+							</Text>
+							<Text className="text-white font-psemibold text-lg">
+								✋ Paper covers Rock
+							</Text>
+							<Text className="text-white font-psemibold text-lg">
+								✌️ Scissors cuts Paper
+							</Text>
+						</View>
+					</View>
+
 					<CustomButton
-						title="Continue with Email"
-						handlePress={() => router.push("/sign-in")}
-						containerStyles="w-full mt-7"
+						title="Play Game"
+						handlePress={() => router.push("/home")}
+						containerStyles="w-[80%] mt-7"
 						textStyles
 					/>
 				</View>

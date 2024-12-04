@@ -1,5 +1,5 @@
 {
-	"name": "sora",
+	"name": "rock-paper-scissors",
 	"main": "expo-router/entry",
 	"version": "1.0.0",
 	"scripts": {

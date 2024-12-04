@@ -1,11 +1,11 @@
 {
 	"expo": {
-		"name": "Aora",
-		"slug": "Aora",
+		"name": "Rock-Paper-Scissors",
+		"slug": "Rock-Paper-Scissors",
 		"version": "1.0.0",
 		"orientation": "portrait",
 		"icon": "./assets/icon.png",
-		"scheme": "Aora",
+		"scheme": "Rock-Paper-Scissors",
 		"userInterfaceStyle": "automatic",
 		"newArchEnabled": true,
 		"ios": {

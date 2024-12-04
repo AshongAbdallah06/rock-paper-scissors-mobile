@@ -1,7 +1,7 @@
+import { MaterialIcons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import React from "react";
 import { Image, Text, View } from "react-native";
-import { icons } from "../../constants";
 
 const TabIcon = ({ color, name, icon, focused }: any) => {
 	return (
@@ -26,13 +26,12 @@ const TabsLayout = () => {
 	return (
 		<Tabs
 			screenOptions={{
-				tabBarShowLabel: false,
 				tabBarActiveTintColor: "#FFA001",
 				tabBarInactiveTintColor: "#CDCDE0",
 				tabBarStyle: {
-					backgroundColor: "#161622",
+					backgroundColor: "#162941",
 					borderTopWidth: 1,
-					borderTopColor: "#23533",
+					borderTopColor: "#112533",
 					height: 84,
 				},
 			}}
@@ -40,58 +39,61 @@ const TabsLayout = () => {
 			<Tabs.Screen
 				name="home"
 				options={{
-					title: "Home",
+					title: "Play",
 					headerShown: false,
 					tabBarIcon: ({ color, focused }) => (
-						<TabIcon
-							name="Home"
-							color={color}
-							icon={icons.home}
+						<MaterialIcons
+							name="sports-esports"
+							color={focused ? "#FFA001" : color}
+							size={32}
 							focused={focused}
 						/>
 					),
 				}}
 			/>
+
 			<Tabs.Screen
 				name="bookmark"
 				options={{
 					title: "Bookmark",
 					headerShown: false,
 					tabBarIcon: ({ color, focused }) => (
-						<TabIcon
-							name="Bookmark"
-							color={color}
-							icon={icons.bookmark}
+						<MaterialIcons
+							name="bookmark"
+							color={focused ? "#FFA001" : color}
+							size={32}
 							focused={focused}
 						/>
 					),
 				}}
 			/>
+
 			<Tabs.Screen
 				name="create"
 				options={{
-					title: "Create",
+					title: "Leaderboard",
 					headerShown: false,
 					tabBarIcon: ({ color, focused }) => (
-						<TabIcon
-							name="Create"
-							color={color}
-							icon={icons.plus}
+						<MaterialIcons
+							name="leaderboard"
+							color={focused ? "#FFA001" : color}
+							size={32}
 							focused={focused}
 						/>
 					),
 				}}
 			/>
+
 			<Tabs.Screen
 				name="profile"
 				options={{
 					title: "Profile",
 					headerShown: false,
 					tabBarIcon: ({ color, focused }) => (
-						<TabIcon
-							name="Profile"
-							color={color}
-							icon={icons.profile}
+						<MaterialIcons
+							name="person"
+							color={focused ? "#FFA001" : color}
+							size={32}
 							focused={focused}
 						/>
 					),

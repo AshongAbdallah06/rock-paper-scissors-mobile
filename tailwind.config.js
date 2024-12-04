@@ -17,9 +17,34 @@ module.exports = {
 					100: "#1E1E2D",
 					200: "#232533",
 				},
-				gray: {
-					100: "#CDCDE0",
+				dark: "hsl(229, 25%, 31%)",
+				score: "hsl(229, 64%, 46%)",
+				header: "hsl(217, 16%, 45%)",
+				back: {
+					primary: "hsl(214, 47%, 23%)",
+					secondary: "hsl(237, 49%, 15%)",
 				},
+				scissors: {
+					primary: "hsl(39, 89%, 49%)",
+					secondary: "hsl(40, 84%, 53%)",
+				},
+				paper: {
+					primary: "hsl(230, 89%, 62%)",
+					secondary: "hsl(230, 89%, 65%)",
+				},
+				rock: {
+					primary: "hsl(349, 71%, 52%)",
+					secondary: "hsl(349, 70%, 56%)",
+				},
+				lizard: {
+					primary: "hsl(261, 73%, 60%)",
+					secondary: "hsl(261, 72%, 63%)",
+				},
+				spock: {
+					primary: "hsl(189, 59%, 53%)",
+					secondary: "hsl(189, 58%, 57%)",
+				},
+				overlay: "#000000b3",
 			},
 			fontFamily: {
 				pthin: ["Poppins-Thin", "sans-serif"],
